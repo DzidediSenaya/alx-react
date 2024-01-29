@@ -1,0 +1,9 @@
+/* modules/header/header.css */
+#logo-container {
+    text-align: center;
+}
+
+#logo {
+    width: 200px;
+    height: 200px;
+}
