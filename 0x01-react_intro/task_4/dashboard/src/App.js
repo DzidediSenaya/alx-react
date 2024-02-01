@@ -1,7 +1,7 @@
-
 import React from 'react';
 import './App.css';
-import HolbertonLogo from './HolbertonLogo.png';
+import HolbertonLogo from './Holberton_Logo.jpg';  // Updated image filename
+import favicon from './favicon.ico';  // Updated favicon import
 
 function App() {
   return (
@@ -16,6 +16,8 @@ function App() {
       <div className="App-footer">
         <p>Copyright 2020 - Holberton School</p>
       </div>
+      {/* Use the imported favicon for the entire document */}
+      <link rel="icon" href={favicon} />
     </div>
   );
 }
