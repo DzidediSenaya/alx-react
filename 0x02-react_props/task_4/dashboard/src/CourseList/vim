@@ -1,0 +1,13 @@
+// CourseListRow.test.js
+import React from 'react';
+import { render } from '@testing-library/react';
+import CourseListRow from './CourseListRow';
+
+test('renders CourseListRow component for header without crashing', () => {
+  const { getByText } = render(<CourseListRow isHeader textFirstCell="Header Cell" />);
+  const headerElement = getByText(/Header Cell/i);
+  expect(headerElement).toBeInTheDocument();
+});
+
+// Add more tests as per the task requirements
+

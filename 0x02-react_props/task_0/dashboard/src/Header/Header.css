@@ -1,0 +1,31 @@
+/* Header.css */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  /* Add any other styles specific to the Header component */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.nav a:hover {
+  background-color: #555;
+}
+
