@@ -10,7 +10,6 @@ import { getLatestNotification } from "../utils/utils";
 import BodySectionWithMarginBottom from '../BodySection/BodySectionWithMarginBottom';
 import BodySection from "../BodySection/BodySection";
 
-
 const listCourses = [
   {id: 1, name: 'ES6', credit: 60},
   {id: 2, name: 'Webpack', credit: 20},
