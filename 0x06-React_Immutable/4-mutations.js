@@ -1,6 +1,5 @@
 import { Map } from 'immutable';
 
-// Create an Immutable Map named 'map'
 export const map = Map({
   1: 'Liam',
   2: 'Noah',
@@ -10,11 +9,6 @@ export const map = Map({
   6: 'Lucas',
 });
 
-// Create a new Immutable Map named 'map2' by modifying 'map'
 export const map2 = map.withMutations((mapItem) => {
-  // Use 'set' method to modify the values for the specified keys
   mapItem.set(2, 'Benjamin').set(4, 'Oliver');
 });
-
-// Export the constants 'map' and 'map2'
-export { map, map2 };
