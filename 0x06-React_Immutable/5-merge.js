@@ -6,9 +6,7 @@ import { List, Map } from 'immutable';
  * @param {Array} page2 - The second array.
  * @returns {List} - A List containing the values of both arrays.
  */
-export function concatElements(page1, page2) {
-    return List(page1.concat(page2));
-}
+export const concatElements = (page1, page2) => List(page1).concat(List(page2));
 
 /**
  * Merges the values of two objects into a List.
@@ -17,8 +15,4 @@ export function concatElements(page1, page2) {
  * @param {Object} page2 - The second object.
  * @returns {List} - A List containing the merged values of both objects.
  */
-export function mergeElements(page1, page2) {
-    const mergedMap = Map(page1).merge(Map(page2));
-    return List(mergedMap.values());
-}
-
+export const mergeElements = (page1, page2) => Map(page1).merge(Map(page2)).toList();
