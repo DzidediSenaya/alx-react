@@ -5,9 +5,7 @@ import { List } from 'immutable';
  * @param {Array} array - The array to convert.
  * @returns {List} - The resulting immutable List.
  */
-export function getListObject(array) {
-    return List(array);
-}
+export const getListObject = (array) => List(array);
 
 /**
  * Appends an element to an immutable List.
@@ -15,7 +13,4 @@ export function getListObject(array) {
  * @param {any} element - The element to append.
  * @returns {List} - The updated immutable List.
  */
-export function addElementToList(list, element) {
-    return list.push(element);
-}
-
+export const addElementToList = (list, element) => list.push(element);
